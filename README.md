@@ -30,4 +30,4 @@ The Process folder includes the complete data processing workflow. It contains:
 The **Plot** folder contains all plotting and tabling scripts used to generate the figures and tables presented in the manuscript.
 
 - Each ncl script is named according to the figure and table number in the paper.
-- Input data are obtained from the outputs of the ##Process##.
+- Input data are obtained from the outputs of the ##Process##/ folder.
