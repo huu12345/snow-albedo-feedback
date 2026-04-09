@@ -31,3 +31,6 @@ The **Plot** folder contains all plotting and tabling scripts used to generate t
 
 - Each ncl script is named according to the figure and table number in the paper.
 - Input data are obtained from the outputs of the ##Process##/ folder.
+ 
+## Computing Environment/
+- The codes require a Linux-based operating system and working installations of Python, NCAR Command Language (NCL), and Climate Data Operators (CDO).
