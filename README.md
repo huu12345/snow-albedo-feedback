@@ -17,7 +17,7 @@ The repository is organized into two main directories: **Process** and **Plot**.
 
 The Process folder includes the complete data processing workflow. It contains:
 - snow_albedo_feedback \
-  This folder is used to calculate the total snow albedo feedback (SAF<sub>NET<sub>) and its snow cover feedback component (SAF<sub>SNC<sub>) and snow metamorphism feedback (SAF<sub>TEM<sub>) component on the seasonal and decadal timescales. Each shell script is named according to timescales and datasets.
+  This folder is used to calculate the total snow albedo feedback (SAF<sub>NET</sub>) and its snow cover feedback component (SAF<sub>SNC</sub>) and snow metamorphism feedback (SAF<sub>TEM</sub>) component on the seasonal and decadal timescales. Each shell script is named according to timescales and datasets.
   
 - snow_albedo \
   This folder is used to calculate snow albedo changes, temperature changes, and snowfall changes as preprocessing steps for linear regression. Each shell script is named according to timescales and datasets.
