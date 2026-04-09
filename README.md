@@ -1,6 +1,6 @@
 # Manuscript Code Repository
 
-**Spring Snow Albedo Feedback on Seasonal and Decadal Timescales for Observations, Reanalysis Products and CMIP6 Models** *(submitted)*
+**Spring Snow Albedo Feedback on Seasonal and Decadal Timescales for Observations, Reanalysis Products and CMIP6 Models** (submitted)
 
 **Git project initialized: 9 Apr 2026**
 
@@ -17,15 +17,12 @@ The repository is organized into two main directories: **Process** and **Plot**.
 
 The Process folder includes the complete data processing workflow. It contains:
 - snow_albedo_feedback
-  
-  Compute NET, SNC, and TEM feedback on the seasonal and decadal timescales. Each shell script is named according to timescles and datasets.
+  Compute NET, SNC, and TEM feedback on the seasonal and decadal timescales. Each shell script is named according to timescales and datasets.
   
 - snow_albedo
-  
   Compute snow albedo changes, temperature changes, and snowfall changes as preprocessing steps for linear regression. Each shell script is named according to timescales and datasets.
   
 - linear_regression
-  
   Compute multiple linear regression between temperature, snowfall and snow albedo changes. Each python script is named according to timescales and datasets.
 
 ## Plot/
