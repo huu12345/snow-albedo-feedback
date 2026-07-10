@@ -17,7 +17,7 @@ The repository is organized into two main directories: **Process** and **Plot**.
 
 The Process folder includes the complete data processing workflow. It contains:
 - emergent_constraint \
-  This folder is used to calculate the constrained decadal SAF<sub>NET, following the emergent constraint approach of Liu et al. (2023).
+  This folder is used to calculate the constrained decadal SAF<sub>NET</sub>, following the emergent constraint approach of Liu et al. (2023).
   
 - snow_albedo_feedback \
   This folder is used to calculate the total snow albedo feedback (SAF<sub>NET</sub>) and its snow cover feedback component (SAF<sub>SNC</sub>) and snow metamorphism feedback (SAF<sub>TEM</sub>) component on the seasonal and decadal timescales. Each shell script is named according to timescales and datasets.
