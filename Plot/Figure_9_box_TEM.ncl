@@ -80,7 +80,7 @@ end do
 ; ;printVarSummary(mean_snow)
 ; print(k5_SS)
 ; qsort(d_alsnow_SS)
-; print(d_alsnow_SS)
+print(snow_SS)
 ;
 ; a1 = avg(snow_SS(18:20))
 ; ;print(a1)
@@ -398,6 +398,8 @@ do m = 0,1
   end do
 end do
 
+print(d_alsnow_obs_SS(:,:,0))
+print(d_alsnow_obs_DS(:,:,0))
 ; print(snow_obs_DS)
 ;*****************读取ERA5-Land***************
 f_snow    := addfile(inpath_ERA5_DS+"mean_snow.ERA5-Land2.EASE_grid.aa.nc","r")
@@ -652,10 +654,10 @@ res@tmYLPrecision = 2    ;y轴精度
 res@tmYLMinorPerMajor= 4   ;相邻大刻度间的小刻度数量
 
 ;seasonal
-res@trYMinF      = 30.
+res@trYMinF      = 20.
 res@trYMaxF      = 80.
 res@tmYLMode     = "Manual"   ;设置刻度和标注
-res@tmYLTickStartF  = 30.
+res@tmYLTickStartF  = 20.
 res@tmYLTickSpacingF= 10.
 res@tmYLTickEndF = 80.
 
@@ -1140,8 +1142,8 @@ pres@gsnPanelXF = (/XF(0),XF(1),XF(2),XF(3),\
                     XF(0),XF(1),XF(2),XF(3),\
                     XF(0),XF(1),XF(2),XF(3)/)
 
-gsn_panel(wks,(/plot1,plot2,plot4,plot3,\
-                plot5,plot6,plot8,plot7,\
-                plot9,plot10,plot12,plot11/),(/3,4/),pres)
+gsn_panel(wks,(/plot1,plot3,plot4,plot2,\
+                plot5,plot7,plot8,plot6,\
+                plot9,plot11,plot12,plot10/),(/3,4/),pres)
 
 end
