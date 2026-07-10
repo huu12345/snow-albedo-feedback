@@ -9,27 +9,23 @@ model6 = (/"ACCESS-ESM1-5","BCC-ESM1","CanESM5",\
 "MPI-ESM-1-2-HAM","MPI-ESM1-2-HR","MPI-ESM1-2-LR","MRI-ESM2-0","NorCPM1",\
 "UKESM1-0-LL"/)
 
-;"ACCESS-CM2","BCC-CSM2-MR","CAS-ESM2-0","CMCC-CM2-HR4","CMCC-CM2-SR5",
-; ,"E3SM-2-0-NARRM","EC-Earth3-CC","FGOALS-g3","HadGEM3-GC31-MM","KIOST-ESM",
-; "NorESM2-LM","SAM0-UNICON","TaiESM1",,"UKESM1-1-LL"
+;*******
+inpath_model_SS   = "/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/data_amip/seasonal/result/result_cmip6/"
+inpath_ERA5_SS    = "/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/data_amip/seasonal/result/result_ERA5-Land/"
+inpath_MERRA2_SS  = "/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/data_amip/seasonal/result/result_MERRA2/"
+inpath_JRA55_SS   = "/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/data_amip/seasonal/result/result_JRA55/"
+inpath_JRA3Q_SS   = "/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/data_amip/seasonal/result/result_JRA3Q/"
+inpath_ERA5snow_SS= "/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/data_amip/seasonal/result/result_ERA5snow/"
+inpath_OBS_SS     = "/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/data_amip/seasonal/result/result_obs_all/"
 
 ;*******
-inpath_model_SS   = "/home/hujl/SAF_time/NH45_dTNH45/paper3_reply/data_amip/seasonal/result/result_cmip6/"
-inpath_ERA5_SS    = "/home/hujl/SAF_time/NH45_dTNH45/paper3_reply/data_amip/seasonal/result/result_ERA5-Land/"
-inpath_MERRA2_SS  = "/home/hujl/SAF_time/NH45_dTNH45/paper3_reply/data_amip/seasonal/result/result_MERRA2/"
-inpath_JRA55_SS   = "/home/hujl/SAF_time/NH45_dTNH45/paper3_reply/data_amip/seasonal/result/result_JRA55/"
-inpath_JRA3Q_SS   = "/home/hujl/SAF_time/NH45_dTNH45/paper3_reply/data_amip/seasonal/result/result_JRA3Q/"
-inpath_ERA5snow_SS= "/home/hujl/SAF_time/NH45_dTNH45/paper3_reply/data_amip/seasonal/result/result_ERA5snow/"
-inpath_OBS_SS     = "/home/hujl/SAF_time/NH45_dTNH45/paper3_reply/data_amip/seasonal/result/result_obs_all/"
-
-;*******
-inpath_model_DS   = "/home/hujl/SAF_time/NH45_dTNH45/paper3_reply/data_amip/decadal_minus_first/result/result_cmip6/"
-inpath_ERA5_DS    = "/home/hujl/SAF_time/NH45_dTNH45/paper3_reply/data_amip/decadal_minus_first/result/result_ERA5-Land/"
-inpath_MERRA2_DS  = "/home/hujl/SAF_time/NH45_dTNH45/paper3_reply/data_amip/decadal_minus_first/result/result_MERRA2/"
-inpath_JRA55_DS   = "/home/hujl/SAF_time/NH45_dTNH45/paper3_reply/data_amip/decadal_minus_first/result/result_JRA55/"
-inpath_JRA3Q_DS   = "/home/hujl/SAF_time/NH45_dTNH45/paper3_reply/data_amip/decadal_minus_first/result/result_JRA3Q/"
-inpath_ERA5snow_DS= "/home/hujl/SAF_time/NH45_dTNH45/paper3_reply/data_amip/decadal_minus_first/result/result_ERA5snow/"
-inpath_OBS_DS     = "/home/hujl/SAF_time/NH45_dTNH45/paper3_reply/data_amip/decadal_minus_first/result/result_obs_all/"
+inpath_model_DS   = "/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/data_amip/decadal_minus_first/result/result_cmip6/"
+inpath_ERA5_DS    = "/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/data_amip/decadal_minus_first/result/result_ERA5-Land/"
+inpath_MERRA2_DS  = "/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/data_amip/decadal_minus_first/result/result_MERRA2/"
+inpath_JRA55_DS   = "/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/data_amip/decadal_minus_first/result/result_JRA55/"
+inpath_JRA3Q_DS   = "/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/data_amip/decadal_minus_first/result/result_JRA3Q/"
+inpath_ERA5snow_DS= "/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/data_amip/decadal_minus_first/result/result_ERA5snow/"
+inpath_OBS_DS     = "/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/data_amip/decadal_minus_first/result/result_obs_all/"
 
 ;*******
 outpath = "/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/scatter/"
@@ -76,7 +72,6 @@ SNC_SS(i) = avg(k1k2_season)
 TEM_SS(i) = avg(k3_season)
 
 end do
-
 ; qsort(NET_SS)
 ; qsort(SNC_SS)
 ; qsort(TEM_SS)
@@ -87,14 +82,13 @@ nm_tas = (/"CRU","GHCN"/)
 nm_snc = (/"JASMES","NSIDC","Rutgers"/)
 nm_alb = (/"APPx","clara_a2","clara_a3"/)
 
-NET_obs_SS = new(2*3*3,"double")
-SNC_obs_SS = new(2*3*3,"double")
-TEM_obs_SS = new(2*3*3,"double")
+NET_obs_SS = new((/2,3,3/),"double")
+SNC_obs_SS = new((/2,3,3/),"double")
+TEM_obs_SS = new((/2,3,3/),"double")
 
-h=0
-do k= 0,2
 do m = 0,1
   do n = 0,2
+    do k= 0,2
       k4_season_obs   := new(3,"double")
       k1k2_season_obs := new(3,"double")
       k3_season_obs   := new(3,"double")
@@ -109,12 +103,9 @@ do m = 0,1
          k3_season_obs(j)  = f_k3_obs->k3(0,0,0)
       end do
 
-      ; print(nm_tas(m)+"_"+nm_snc(n)+"_"+nm_alb(k))
-      ; print(avg(k4_season_obs))
-      NET_obs_SS(h) = avg(k4_season_obs)
-      SNC_obs_SS(h) = avg(k1k2_season_obs)
-      TEM_obs_SS(h) = avg(k3_season_obs)
-      h=h+1
+      NET_obs_SS(m,n,k) = avg(k4_season_obs)
+      SNC_obs_SS(m,n,k) = avg(k1k2_season_obs)
+      TEM_obs_SS(m,n,k) = avg(k3_season_obs)
     end do
   end do
 end do
@@ -142,10 +133,6 @@ end do
 NET_ERA5_SS = avg(k4_season_ERA5)
 SNC_ERA5_SS = avg(k1k2_season_ERA5)
 TEM_ERA5_SS = avg(k3_season_ERA5)
-
-; ;;;;;print(NET_ERA5_SS)
-; ;;;;;print(SNC_ERA5_SS)
-; ;;;;;print(TEM_ERA5_SS)
 
 ;***********读取MERRA2*********
 k4_season_MERRA2   = new(3,"double")
@@ -268,24 +255,21 @@ end do
 
 ;**************************************
 ;**************读取观测 ************
-NET_obs_DS = new(2*3*3,"double")
-SNC_obs_DS = new(2*3*3,"double")
-TEM_obs_DS = new(2*3*3,"double")
+NET_obs_DS = new((/2,3,3/),"double")
+SNC_obs_DS = new((/2,3,3/),"double")
+TEM_obs_DS = new((/2,3,3/),"double")
 
-h=0
-do k= 0,2
 do m = 0,1
   do n = 0,2
+    do k= 0,2
 
       f_k4_obs   = addfile(inpath_OBS_DS+"k4.obs_"+nm_tas(m)+"_"+nm_snc(n)+"_"+nm_alb(k)+".EASE_grid.aa.nc","r")
       f_k1k2_obs = addfile(inpath_OBS_DS+"k1k2.obs_"+nm_tas(m)+"_"+nm_snc(n)+"_"+nm_alb(k)+".EASE_grid.aa.nc","r")
       f_k3_obs   = addfile(inpath_OBS_DS+"k3.obs_"+nm_tas(m)+"_"+nm_snc(n)+"_"+nm_alb(k)+".EASE_grid.aa.nc","r")
 
-      NET_obs_DS(h) = f_k4_obs->k4(0,0,0)
-      SNC_obs_DS(h) = f_k1k2_obs->k1k2(0,0,0)
-      TEM_obs_DS(h) = f_k3_obs->k3(0,0,0)
-
-      h=h+1
+      NET_obs_DS(m,n,k) = f_k4_obs->k4(0,0,0)
+      SNC_obs_DS(m,n,k) = f_k1k2_obs->k1k2(0,0,0)
+      TEM_obs_DS(m,n,k) = f_k3_obs->k3(0,0,0)
 
     end do
   end do
@@ -301,9 +285,6 @@ NET_ERA5_DS = f_k4_ERA5->k4(0,0,0)
 SNC_ERA5_DS = f_k1k2_ERA5->k1k2(0,0,0)
 TEM_ERA5_DS = f_k3_ERA5->k3(0,0,0)
 
-;;;;;print(NET_ERA5_DS)
-;;;;;print(SNC_ERA5_DS)
-;;;;;print(TEM_ERA5_DS)
 ;*************读取MERRA2**********
 f_k4_MERRA2   = addfile(inpath_MERRA2_DS+"k4.MERRA22.EASE_grid.aa.nc","r")
 f_k1k2_MERRA2 = addfile(inpath_MERRA2_DS+"k1k2.MERRA22.EASE_grid.aa.nc","r")
@@ -330,9 +311,6 @@ f_k3_JRA3Q   = addfile(inpath_JRA3Q_DS+"k3.JRA3Q2.EASE_grid.aa.nc","r")
 NET_JRA3Q_DS = f_k4_JRA3Q->k4(0,0,0)
 SNC_JRA3Q_DS = f_k1k2_JRA3Q->k1k2(0,0,0)
 TEM_JRA3Q_DS = f_k3_JRA3Q->k3(0,0,0)
-;print(NET_JRA3Q_DS)
-;print(SNC_JRA3Q_DS)
-;print(TEM_JRA3Q_DS)
 
 ;*************读取ERA5snow**********
 f_k4_ERA5snow   = addfile(inpath_ERA5snow_DS+"k4.ERA5snow2.EASE_grid.aa.nc","r")
@@ -344,48 +322,30 @@ SNC_ERA5snow_DS = f_k1k2_ERA5snow->k1k2(0,0,0)
 TEM_ERA5snow_DS = f_k3_ERA5snow->k3(0,0,0)
 
 
+;*************约束后的结果**********
+f=addfile("/home/hujl/SAF_time/NH45_dTNH45/paper4_reply_noGLASS/scatter/constrain.nc","r")
+zmean_EC = f->zmean_EC
+zstd_EC = f->zstd_EC
+
+print(zmean_EC)
+print(zstd_EC)
+
 ;**************************************
-;**************计算观测均值*************
-;观测平均
-; NET_obs_SS_all  = ndtooned(NET_obs_SS)
-; SNC_obs_SS_all  = ndtooned(SNC_obs_SS)
-; TEM_obs_SS_all  = ndtooned(TEM_obs_SS)
-; ; printVarSummary(NET_obs_SS_all)
-;
-; NET_obs_DS_all  = ndtooned(NET_obs_DS)
-; SNC_obs_DS_all  = ndtooned(SNC_obs_DS)
-; TEM_obs_DS_all  = ndtooned(TEM_obs_DS)
-;
-; x := NET_obs_SS_all
-; y := NET_obs_DS_all
-;
-; rc      := regline_stats(x,y)
-; pval    := rc@pval                                   ; use markers
-; pltarry := rc*x + rc@yintercept              ; use solid line
-;
-; print(rc)
-; ; print(pval(1))
-; print(rc@yintercept)
+;**************数据处理*************
+;观测
+NET_obs_SS  := dim_avg_n(NET_obs_SS,(/0,1/))
+SNC_obs_SS  := dim_avg_n(SNC_obs_SS,(/0,1/))
+TEM_obs_SS  := dim_avg_n(TEM_obs_SS,(/0,1/))
 
-NET_obs_SS_avg  = NET_obs_SS
-SNC_obs_SS_avg  = SNC_obs_SS
-TEM_obs_SS_avg  = TEM_obs_SS
-; printVarSummary(NET_obs_SS_avg)
+NET_obs_DS  := dim_avg_n(NET_obs_DS,(/0,1/))
+SNC_obs_DS  := dim_avg_n(SNC_obs_DS,(/0,1/))
+TEM_obs_DS  := dim_avg_n(TEM_obs_DS,(/0,1/))
+printVarSummary(NET_obs_DS)
 
-NET_obs_DS_avg  = NET_obs_DS
-SNC_obs_DS_avg  = SNC_obs_DS
-TEM_obs_DS_avg  = TEM_obs_DS
-
-; x := NET_obs_SS_avg
-; y := NET_obs_DS_avg
-;
-; rc      := regline_stats(x,y)
-; pval    := rc@pval                                   ; use markers
-; pltarry := rc*x + rc@yintercept              ; use solid line
-;
-; print(rc)
-; ; print(pval(1))
-; print(rc@yintercept)
+obsmean_SS = avg(NET_obs_SS)
+obsstd_SS  = dim_stddev(NET_obs_SS)
+obsmean_DS = avg(NET_obs_DS)
+obsstd_DS  = dim_stddev(NET_obs_DS)
 
 ;再分析
 ;seasonal
@@ -441,631 +401,278 @@ res                   = True                     ; plot mods desired
 res@gsnDraw       = False
 res@gsnFrame      = False
 
-res@tiYAxisString    = "Decadal (%/K)"
-res@tiXAxisString    = "Seasonal (%/K)"
+res@tmXTOn     = False
+res@tmYROn     = False
 
-res@xyMarkLineMode   = "Markers"                ; choose to use markers
-res@xyMarkerOpacityF = 0.0  ; 设置透明度为0（完全透明）
+res@tiYAxisFontHeightF   = 0.025
+res@tiXAxisFontHeightF   = 0.025
 
-res@tiYAxisFontHeightF   = 0.03
-res@tiYAxisFontHeightF   = 0.03
-res@tiMainFontHeightF    = 0.038
-
-str_cmip = sprintf("%2.2g",ispan(1,n_model6,1))
-str_obs  = (/"A","C2","C3"/)
-str_rea  = (/"E","Es","J3","J5","M"/)
-
-; print(str_cmip)
-
-;******************plot1: NET*******************
-res@tiMainString     = "SAF~B~NET~N~"
-
-res@trYMinF          = -2.5
-res@trYMaxF          = 0.        ; extra space for demo
-res@tmYLMode         = "Manual"
-res@tmYLTickStartF   = -2.5
-res@tmYLTickEndF     = 0.
-res@tmYLTickSpacingF = 0.5
-
-res@trXMinF          = -2.5
-res@trXMaxF          = 0.           ; extra space for demo
-res@tmXBMode         = "Manual"
-res@tmXBTickStartF   = -2.5
-res@tmXBTickEndF     = 0.
-res@tmXBTickSpacingF = 0.5
+; res@tiMainFontHeightF    = 0.04
+; res@tiMainOffsetYF       = 0.008
+; res@tiMainFont           = 22
 
 res@tmXBPrecision = 2
 res@tmYLPrecision = 2
 
-res@tmXBMinorPerMajor = 4
-res@tmYLMinorPerMajor = 4
+res@tmXBMinorPerMajor = 0
+res@tmYLMinorPerMajor = 0
 
-plot1 = gsn_csm_xy(wks, NET_SS, NET_DS, res)
+; res@trYMinF          = -2.
+; res@trYMaxF          = 0.1        ; extra space for demo
+; res@tmYLMode         = "Manual"
+; res@tmYLTickStartF   = -2.
+; res@tmYLTickEndF     = 0.
+; res@tmYLTickSpacingF = 0.2
+; ;
+; res@trXMinF          = -2.0
+; res@trXMaxF          = 0.1           ; extra space for demo
+; res@tmXBMode         = "Manual"
+; res@tmXBTickStartF   = -2.0
+; res@tmXBTickEndF     = 0.
+; res@tmXBTickSpacingF = 0.2
 
-;**CMIP6**
-txres = True   ; 设置文本
-txres@txFontHeightF = 0.02
-txres@txJust = "CenterCenter"
+res@trYMinF          = -2.1
+res@trYMaxF          = 0.        ; extra space for demo
+; res@tmYLMode         = "Manual"
+; res@tmYLTickStartF   = -2.4
+; res@tmYLTickEndF     = 0.4
+; res@tmYLTickSpacingF = 0.4
 
-text1 = gsn_add_text(wks,plot1,str_cmip,NET_SS,NET_DS,txres)
+res@trXMinF          = -2.1
+res@trXMaxF          = -0.           ; extra space for demo
 
-; ;**观测**
-; txres@txFontColor = "red"
-; text2 = gsn_add_text(wks,plot1,str_obs,NET_obs_SS_avg,NET_obs_DS_avg,txres)
+;***************画模式*****************
+;画散点
+res@tiXAxisString    = "Seasonal SAF~B~NET~N~ (%/K)"
+res@tiYAxisString    = "Decadal SAF~B~NET~N~ (%/K)"
 
-;**再分析**
-txres@txFontColor = "blue2"
-text3 = gsn_add_text(wks,plot1,str_rea,NET_rea_SS,NET_rea_DS,txres)
-
-;******************plot2: SNC*******************
-res@tiMainString     = "SAF~B~SNC~N~"
-
-; res@tmXBMinorPerMajor = 2
-; res@tmYLMinorPerMajor = 2
-
-res@trYMinF          = -1.5
-res@trYMaxF          = 0.0         ; extra space for demo
-res@tmYLMode         = "Manual"
-res@tmYLTickStartF   = -1.5
-res@tmYLTickEndF     = 0.
-res@tmYLTickSpacingF = 0.5
-
-res@trXMinF          = -1.5
-res@trXMaxF          = 0.0           ; extra space for demo
-res@tmXBMode         = "Manual"
-res@tmXBTickStartF   = -1.5
-res@tmXBTickEndF     = 0.
-res@tmXBTickSpacingF = 0.5
-
-plot2 = gsn_csm_xy(wks, SNC_SS, SNC_DS, res)
-
-;**CMIP6**
-txres@txFontColor = "black"
-text1 = gsn_add_text(wks,plot2,str_cmip,SNC_SS,SNC_DS,txres)
-
-;**观测**
-; txres@txFontColor = "red"
-; text2 = gsn_add_text(wks,plot2,str_obs,SNC_obs_SS_avg,SNC_obs_DS_avg,txres)
-
-;**再分析**
-txres@txFontColor = "blue"
-text3 = gsn_add_text(wks,plot2,str_rea,SNC_rea_SS,SNC_rea_DS,txres)
-
-;******************plot3: TEM*******************
-res@tiMainString     = "SAF~B~TEM~N~"
-
-; res@tmXBMinorPerMajor = 2
-; res@tmYLMinorPerMajor = 4
-
-res@trYMinF          = -2.0
-res@trYMaxF          = 0.5         ; extra space for demo
-res@tmYLMode         = "Manual"
-res@tmYLTickStartF   = -2.0
-res@tmYLTickEndF     = 0.5
-res@tmYLTickSpacingF = 0.5
-
-res@trXMinF          = -2.0
-res@trXMaxF          = 0.5           ; extra space for demo
-res@tmXBMode         = "Manual"
-res@tmXBTickStartF   = -2.0
-res@tmXBTickEndF     = 0.5
-res@tmXBTickSpacingF = 0.5
-
-plot3 = gsn_csm_xy(wks, TEM_SS, TEM_DS, res)
-
-;**CMIP6**
-txres@txFontColor = "black"
-text1 = gsn_add_text(wks,plot3,str_cmip,TEM_SS,TEM_DS,txres)
-
-; ;**观测**
-; txres@txFontColor = "red"
-; text2 = gsn_add_text(wks,plot3,str_obs,TEM_obs_SS_avg,TEM_obs_DS_avg,txres)
-
-;**再分析**
-txres@txFontColor = "blue"
-text3 = gsn_add_text(wks,plot3,str_rea,TEM_rea_SS,TEM_rea_DS,txres)
-
-
-;****************观测***************
-mark = new(18,"integer")
-mark(0:5) = 4
-mark(6:11) = 7
-mark(12:17) = 6
-
-plot10 = new(18,graphic)
-plot20 = new(18,graphic)
-plot30 = new(18,graphic)
-
-do i=0,17
 res@xyMarkLineMode   = "Markers"                ; choose to use markers
-res@xyMarkers         =  mark(i)                      ; choose type of marker
-res@xyMarkerColor     = "red"                    ; Marker color
-res@xyMarkerSizeF     = 0.012                     ; Marker size (default 0.01)
-res@xyMarkerThicknessF= 0.9
-res@xyMarkerOpacityF = 1.0  ; 设置透明度为0（完全透明）
+; res@xyMarkerOpacityF = 0.0  ; 设置透明度为0（完全透明）
+res@xyMarkers         =  16                      ; choose type of marker
+res@xyMarkerColor     = "mediumblue";"indianred2"                    ; Marker color
+res@xyMarkerSizeF     = 0.011                     ; Marker size (default 0.01)
+res@xyMarkerThicknessF= 1.
 
-plot10(i) = gsn_csm_xy(wks,  (/NET_obs_SS_avg(i),NET_obs_SS_avg(i)/), (/NET_obs_DS_avg(i),NET_obs_DS_avg(i)/), res)
-plot20(i) = gsn_csm_xy(wks,  (/SNC_obs_SS_avg(i),SNC_obs_SS_avg(i)/), (/SNC_obs_DS_avg(i),SNC_obs_DS_avg(i)/), res)
-plot30(i) = gsn_csm_xy(wks,  (/TEM_obs_SS_avg(i),TEM_obs_SS_avg(i)/), (/TEM_obs_DS_avg(i),TEM_obs_DS_avg(i)/), res)
-overlay(plot1,plot10(i))
-overlay(plot2,plot20(i))
-overlay(plot3,plot30(i))
-end do
+x := NET_SS
+y := NET_DS
+
+plot = gsn_csm_xy(wks, x, y, res)
+
+;回归线
+res1 = True
+res1@gsnDraw       = False
+res1@gsnFrame      = False
+
+res1@xyLineColor       = "mediumblue";"dodgerblue3"
+res1@xyLineThicknessF  = 5.
+res1@xyDashPattern = 16
+
+rc      := regline_stats(x,y)
+pval    := rc@pval                                   ; use markers
+pltarry := rc*x + rc@yintercept              ; use solid line
+rc_r    = rc@r
+
+plot1  := gsn_csm_xy(wks,(/min(x),max(x)/),(/min(pltarry),max(pltarry)/),res1)        ; create plot
+overlay(plot,plot1)
+
+;阴影
+; ymr025 = rc@YMR025
+; ymr975 = rc@YMR975
+;
+; ; 获取排序索引（不改变原始 x）
+; idx = dim_pqsort(x, 1)
+;
+; ; 重新排序所有数据
+; x_sorted = x(idx)
+; y_fit_sorted = pltarry(idx)
+; ci_low_sorted = ymr025(idx)
+; ci_high_sorted = ymr975(idx)
+; ; print(x_sorted)
+; ; print(y_fit_sorted)
+; ; print(ci_low_sorted)
+; ; print(ci_high_sorted)
+;
+; ; 构造多边形顶点
+; xp = new( (/2*32/), double )
+; yp = new( (/2*32/), double )
+;
+; do k = 0,31
+;   xp(k) = x_sorted(k)
+;   yp(k) = ci_low_sorted(k)
+;
+;   xp(2*32-1-k) = x_sorted(k)
+;   yp(2*32-1-k) = ci_high_sorted(k)
+; end do
+;
+; res_ci = True
+; res_ci@tfPolyDrawOrder = "PreDraw"  ; this can be used for polylines, polymarkers, or polygons
+; res_ci@gsFillColor = "lightblue1"
+; res_ci@gsFillOpacityF = 0.6
+; poly = gsn_add_polygon(wks, plot, xp, yp, res_ci)
+
+;***************画观测***************
+;阴影
+gres                 = True
+gres@gsFillColor     = "gray81"
+gres@gsFillOpacityF  = 0.42
+gres@tfPolyDrawOrder = "PreDraw"  ; this can be used for polylines, polymarkers, or polygons
+dum_obs_1 = gsn_add_polygon(wks,plot, (/obsmean_SS-obsstd_SS, obsmean_SS+obsstd_SS, obsmean_SS+obsstd_SS, obsmean_SS-obsstd_SS/), (/-2.5, -2.5, 0.5, 0.5/),gres)
+
+dum_obs_2 = gsn_add_polygon(wks,plot, (/-2.5, -2.5, 0.5, 0.5/),(/obsmean_DS-obsstd_DS, obsmean_DS+obsstd_DS, obsmean_DS+obsstd_DS, obsmean_DS-obsstd_DS/), gres)
+
+;平均值
+plres2 = True
+plres2@gsLineThicknessF  = 4.          ; make second line thicker
+plres2@gsLineColor       = "black"         ; change line color
+plres2@gsLineDashPattern = 0
+dum_obs_3 = gsn_add_polyline(wks,plot,(/obsmean_SS,obsmean_SS/),(/-2.5,0.5/),plres2)
+
+dum_obs_4 = gsn_add_polyline(wks,plot,(/-2.5,0.5/),(/obsmean_DS,obsmean_DS/),plres2)
+
+;*************约束后的结果**********
+;阴影
+gres1                 = True
+gres1@gsFillColor     = "darkgreen"
+gres1@gsFillOpacityF  = 0.38
+; gres@tfPolyDrawOrder = "PreDraw"  ; this can be used for polylines, polymarkers, or polygons
+dum_EC_1 = gsn_add_polygon(wks,plot, (/-2.5, -2.5, -2.0, -2.0/),(/zmean_EC-zstd_EC, zmean_EC+zstd_EC, zmean_EC+zstd_EC, zmean_EC-zstd_EC/), gres1)
+
+;平均值
+plres3 = True
+plres3@gsLineThicknessF  = 5.          ; make second line thicker
+plres3@gsLineColor       = "darkgreen"         ; change line color
+plres3@gsLineDashPattern = 16
+dum_EC_2 = gsn_add_polyline(wks,plot,(/-2.5,obsmean_SS/),(/zmean_EC,zmean_EC/),plres3)
 
 ;****************添加对角线 (y=x)***************
 diagonal_x = (/-3, 0.5/)  ; 对角线的 X 范围
 diagonal_y = diagonal_x   ; 对角线的 Y 范围
 
-res1=True
-res1@gsLineDashPattern = 1
-res1@gsLineColor = "gray40"
+res2=True
+res2@gsLineDashPattern = 1
+res2@gsLineColor = "gray80";"indianred2"
+res2@gsLineThicknessF  = 5.          ; make second line thicker
 
-dum1 = gsn_add_polyline(wks, plot1, diagonal_x, diagonal_y, res1)  ; 添加对角线
-dum2 = gsn_add_polyline(wks, plot2, diagonal_x, diagonal_y, res1)  ; 添加对角线
-dum3 = gsn_add_polyline(wks, plot3, diagonal_x, diagonal_y, res1)  ; 添加对角线
+dum1 = gsn_add_polyline(wks, plot, diagonal_x, diagonal_y, res2)  ; 添加对角线
 
-;*******************线性回归********************
-;***********plot1************
-;*****OBS******
-res@xyMarkLineModes     = "Lines"  ; choose which have markers
-res@xyLineThicknesses   = 1.8                ; set second line to 2
-res@xyLineColor         = "red"
+;****************添加观测标注***************
+str_obs  = (/"A","C2","C3"/)
+str_rea  = (/"E","Es","J3","J5","M"/)
 
-x := NET_obs_SS_avg
-y := NET_obs_DS_avg
+txres = True   ;  CMIP6
+txres@txFontHeightF = 0.015
+txres@txJust = "CenterCenter"
+txres@txFontColor = "red"   ; 观测
+text2 = gsn_add_text(wks,plot,str_obs,NET_obs_SS,NET_obs_DS,txres)
 
-rc      := regline_stats(x,y)
-pval    := rc@pval                                   ; use markers
-pltarry := rc*x + rc@yintercept              ; use solid line
+txres@txFontColor = "darkorange2"  ; 再分析
+text3 = gsn_add_text(wks,plot,str_rea,NET_rea_SS,NET_rea_DS,txres)
 
-if rc.lt.0 then
-   rc_r = -rc@r
- else
-   rc_r = rc@r
-end if
-
-print("NET OBS P: "+pval(1))
-; print("yintercept:"+rc@yintercept)
-; print(rc@r)
-
-plot12  = gsn_csm_xy(wks,x,pltarry,res)        ; create plot
-overlay(plot1,plot12)
-
-;线性函数
-res2               = True                     ; text mods desired
-res2@txFontHeightF = 0.017                     ; font smaller. default big
-res2@txFontColor   = "red"
-
-x1 = (/-0.55, -0.48/) +0.04
-y1 = (/-1.6, -1.73/)+0.1
-
-if rc@yintercept.lt.0 then
-   dum11 = gsn_add_text(wks,plot1,"y = "+sprintf("%.2f",rc)+"x - "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-else
-   dum11 = gsn_add_text(wks,plot1,"y = "+sprintf("%.2f",rc)+"x + "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-end if
-
-if pval(1).lt.0.01 then
-   dum11 = gsn_add_text(wks,plot1,"r = "+sprintf("%.2f",rc_r)+" (p < 0.01)",x1(1),y1(1),res2)
-else if pval(1).lt.0.05 then
-   dum11 = gsn_add_text(wks,plot1,"r = "+sprintf("%.2f",rc_r)+" (p < 0.05)",x1(1),y1(1),res2)
-else if pval(1).lt.0.1 then
-   dum11 = gsn_add_text(wks,plot1,"r = "+sprintf("%.2f",rc_r)+" (p < 0.10)",x1(1),y1(1),res2)
-else
-   dum11 = gsn_add_text(wks,plot1,"r = "+sprintf("%.2f",rc_r)+" (p = "+sprintf("%.2f",pval(1))+")",x1(1),y1(1),res2)
-end if
-end if
-end if
-
-;*****再分析******
-res@xyLineColor         = "blue"
+;再分析回归线
+res@xyMarkLineModes     = "Lines"
+res@xyLineThicknesses   = 5.
+res@xyLineColor         = "darkorange2"
+res@xyDashPattern = 16
 
 x := NET_rea_SS
 y := NET_rea_DS
 
 rc      := regline_stats(x,y)
-pval    := rc@pval                                   ; use markers
-pltarry := rc*x + rc@yintercept              ; use solid line
+pval_rea:= rc@pval
+pltarry := rc*x + rc@yintercept
 
 if rc.lt.0 then
-   rc_r = -rc@r
+   rc_r_rea = -rc@r
  else
-   rc_r = rc@r
+   rc_r_rea = rc@r
 end if
 
-print("NET Rea P: "+pval(1))
-; print("yintercept:"+rc@yintercept)
+; plot2  = gsn_csm_xy(wks,(/min(x),max(x)/),(/min(pltarry),max(pltarry)/),res)
+; overlay(plot,plot2)
 
-plot13  = gsn_csm_xy(wks,x,pltarry,res)        ; create plot
-overlay(plot1,plot13)
+;****************标注***************
+txres                  = True
+txres@txFontHeightF    = 0.017
 
-;线性函数
-res2@txFontColor   = "blue"
+amres                  = True
+amres@amJust           = "BottomLeft"
+txres@txFontColor      = "mediumblue"
 
-x1 = (/-0.56, -0.49/)+0.04
-y1 = (/-1.7, -1.83/)-0.25+0.1
-
-
-if rc@yintercept.lt.0 then
-   dum12 = gsn_add_text(wks,plot1,"y = "+sprintf("%.2f",rc)+"x - "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-else
-   dum12 = gsn_add_text(wks,plot1,"y = "+sprintf("%.2f",rc)+"x + "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-end if
+;CMIP6标注
+amres@amParallelPosF   = -0.03
+amres@amOrthogonalPosF = 0.5
 
 if pval(1).lt.0.01 then
-   dum12 = gsn_add_text(wks,plot1,"r = "+sprintf("%.2f",rc_r)+" (p < 0.01)",x1(1),y1(1),res2)
+  txid1 = gsn_create_text(wks, "CMIP6 (r = "+sprintf("%.2f",rc_r)+", p < 0.01)", txres)
+  annoid1 = gsn_add_annotation(plot, txid1, amres)
 else if pval(1).lt.0.05 then
-   dum12 = gsn_add_text(wks,plot1,"r = "+sprintf("%.2f",rc_r)+" (p < 0.05)",x1(1),y1(1),res2)
+  txid1 = gsn_create_text(wks, "CMIP6 (r = "+sprintf("%.2f",rc_r)+", p < 0.05)", txres)
+  annoid1 = gsn_add_annotation(plot, txid1, amres)
 else if pval(1).lt.0.1 then
-   dum12 = gsn_add_text(wks,plot1,"r = "+sprintf("%.2f",rc_r)+" (p < 0.10)",x1(1),y1(1),res2)
+  txid1 = gsn_create_text(wks, "CMIP6 (r = "+sprintf("%.2f",rc_r)+", p < 0.10)", txres)
+  annoid1 = gsn_add_annotation(plot, txid1, amres)
 else
-   dum12 = gsn_add_text(wks,plot1,"r = "+sprintf("%.2f",rc_r)+" (p = "+sprintf("%.2f",pval(1))+")",x1(1),y1(1),res2)
+  txid1 = gsn_create_text(wks, "CMIP6 (r = "+sprintf("%.2f",rc_r)+", p = "+sprintf("%.2f",pval(1))+")", txres)
+  annoid1 = gsn_add_annotation(plot, txid1, amres)
 end if
 end if
 end if
 
-;*****CMIP6******
-res@xyLineColor         = "black"
+;再分析标注
+txres@txFontColor      = "darkorange2"
 
-x := NET_SS
-y := NET_DS
+amres@amParallelPosF   = -0.03
+amres@amOrthogonalPosF = 0.45
 
-rc      := regline_stats(x,y)
-pval    := rc@pval                                   ; use markers
-pltarry := rc*x + rc@yintercept              ; use solid line
+pval = pval_rea
 
-if rc.lt.0 then
-   rc_r = -rc@r
- else
-   rc_r = rc@r
-end if
-
-print("NET CMIP6 P: "+pval(1))
-; print("yintercept:"+rc@yintercept)
-
-plot11  = gsn_csm_xy(wks,x,pltarry,res)        ; create plot
-overlay(plot1,plot11)
-
-;线性函数
-res2@txFontColor   = "black"
-
-x1 = (/-0.55, -0.495/)+0.04
-y1 = (/-1.6, -1.73/) -0.7+0.1
-
-if rc@yintercept.lt.0 then
-   dum13 = gsn_add_text(wks,plot1,"y = "+sprintf("%.2f",rc)+"x - "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-else
-   dum13 = gsn_add_text(wks,plot1,"y = "+sprintf("%.2f",rc)+"x + "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-end if
+; txid1 = gsn_create_text(wks, "Reanalysis", txres)
+; annoid2 = gsn_add_annotation(plot, txid1, amres)
 
 if pval(1).lt.0.01 then
-   dum13 = gsn_add_text(wks,plot1,"r = "+sprintf("%.2f",rc_r)+" (p < 0.01)",x1(1),y1(1),res2)
+  txid2 = gsn_create_text(wks, "Reanalysis (r = "+sprintf("%.2f",rc_r_rea)+", p < 0.01)", txres)
+  annoid2 = gsn_add_annotation(plot, txid2, amres)
 else if pval(1).lt.0.05 then
-   dum13 = gsn_add_text(wks,plot1,"r = "+sprintf("%.2f",rc_r)+" (p < 0.05)",x1(1),y1(1),res2)
+  txid2 = gsn_create_text(wks, "Reanalysis (r = "+sprintf("%.2f",rc_r_rea)+", p < 0.05)", txres)
+  annoid2 = gsn_add_annotation(plot, txid2, amres)
 else if pval(1).lt.0.1 then
-   dum13 = gsn_add_text(wks,plot1,"r = "+sprintf("%.2f",rc_r)+" (p < 0.10)",x1(1),y1(1),res2)
+  txid2 = gsn_create_text(wks, "Reanalysis (r = "+sprintf("%.2f",rc_r_rea)+", p < 0.10)", txres)
+  annoid2 = gsn_add_annotation(plot, txid2, amres)
 else
-   dum13 = gsn_add_text(wks,plot1,"r = "+sprintf("%.2f",rc_r)+" (p = "+sprintf("%.2f",pval(1))+")",x1(1),y1(1),res2)
+  txid2 = gsn_create_text(wks, "Reanalysis (r = "+sprintf("%.2f",rc_r_rea)+", p = "+sprintf("%.2f",pval(1))+")", txres)
+  annoid2 = gsn_add_annotation(plot, txid2, amres)
 end if
 end if
 end if
 
-;***********plot2************
-;*****OBS******
-res@xyLineColor         = "red"
-
-x := SNC_obs_SS_avg
-y := SNC_obs_DS_avg
-
-rc      := regline_stats(x,y)
-pval    := rc@pval                                   ; use markers
-pltarry := rc*x + rc@yintercept              ; use solid line
-
-if rc.lt.0 then
-   rc_r = -rc@r
- else
-   rc_r = rc@r
-end if
-
-print("SNC OBS P: "+pval(1))
-; print("OBS yintercept:"+rc@yintercept)
-
-plot21  = gsn_csm_xy(wks,x,pltarry,res)        ; create plot
-overlay(plot2,plot21)
-
-;线性函数
-res2@txFontColor   = "red"
-
-x1 = (/-0.315, -0.28/)
-y1 = (/-0.88, -0.95/) -0.05
-
-if rc@yintercept.lt.0 then
-   dum21 = gsn_add_text(wks,plot2,"y = "+sprintf("%.2f",rc)+"x - "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-else
-   dum21 = gsn_add_text(wks,plot2,"y = "+sprintf("%.2f",rc)+"x + "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-end if
-
-if pval(1).lt.0.01 then
-   dum21 = gsn_add_text(wks,plot2,"r = "+sprintf("%.2f",rc_r)+" (p < 0.01)",x1(1),y1(1),res2)
-else if pval(1).lt.0.05 then
-   dum21 = gsn_add_text(wks,plot2,"r = "+sprintf("%.2f",rc_r)+" (p < 0.05)",x1(1),y1(1),res2)
-else if pval(1).lt.0.1 then
-   dum21 = gsn_add_text(wks,plot2,"r = "+sprintf("%.2f",rc_r)+" (p < 0.10)",x1(1),y1(1),res2)
-else
-   dum21 = gsn_add_text(wks,plot2,"r = "+sprintf("%.2f",rc_r)+" (p = "+sprintf("%.2f",pval(1))+")",x1(1),y1(1),res2)
-end if
-end if
-end if
-
-;*****再分析******
-res@xyLineColor         = "blue"
-
-x := SNC_rea_SS
-y := SNC_rea_DS
-
-rc      := regline_stats(x,y)
-pval    := rc@pval                                   ; use markers
-pltarry := rc*x + rc@yintercept              ; use solid line
-
-if rc.lt.0 then
-   rc_r = -rc@r
- else
-   rc_r = rc@r
-end if
-
-print("SNC Rea P: "+pval(1))
-; print("Rea yintercept:"+rc@yintercept)
-
-plot22  = gsn_csm_xy(wks,x,pltarry,res)        ; create plot
-overlay(plot2,plot22)
-
-;线性函数
-res2@txFontColor   = "blue"
-
-x1 = (/-0.315, -0.28/)
-y1 = (/-0.88, -0.95/) -0.2 -0.05
-
-if rc@yintercept.lt.0 then
-   dum22 = gsn_add_text(wks,plot2,"y = "+sprintf("%.2f",rc)+"x - "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-else
-   dum22 = gsn_add_text(wks,plot2,"y = "+sprintf("%.2f",rc)+"x + "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-end if
-
-if pval(1).lt.0.01 then
-   dum22 = gsn_add_text(wks,plot2,"r = "+sprintf("%.2f",rc_r)+" (p < 0.01)",x1(1),y1(1),res2)
-else if pval(1).lt.0.05 then
-   dum22 = gsn_add_text(wks,plot2,"r = "+sprintf("%.2f",rc_r)+" (p < 0.05)",x1(1),y1(1),res2)
-else if pval(1).lt.0.1 then
-   dum22 = gsn_add_text(wks,plot2,"r = "+sprintf("%.2f",rc_r)+" (p < 0.10)",x1(1),y1(1),res2)
-else
-   dum22 = gsn_add_text(wks,plot2,"r = "+sprintf("%.2f",rc_r)+" (p = "+sprintf("%.2f",pval(1))+")",x1(1),y1(1),res2)
-end if
-end if
-end if
-
-;*****CMIP6******
-res@xyLineColor         = "black"
-
-x := SNC_SS
-y := SNC_DS
-
-rc      := regline_stats(x,y)
-pval    := rc@pval                                   ; use markers
-pltarry := rc*x + rc@yintercept              ; use solid line
-
-if rc.lt.0 then
-   rc_r = -rc@r
- else
-   rc_r = rc@r
-end if
-
-print("SNC CMIP6 P: "+pval(1))
-; print("CMIP6 yintercept:"+rc@yintercept)
-
-plot23  = gsn_csm_xy(wks,x,pltarry,res)        ; create plot
-overlay(plot2,plot23)
-
-;线性函数
-res2@txFontColor   = "black"
-
-x1 = (/-0.322, -0.28/)
-y1 = (/-0.88, -0.95/) -0.4 -0.05
-
-if rc@yintercept.lt.0 then
-   dum23 = gsn_add_text(wks,plot2,"y = "+sprintf("%.2f",rc)+"x - "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-else
-   dum23 = gsn_add_text(wks,plot2,"y = "+sprintf("%.2f",rc)+"x + "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-end if
-
-if pval(1).lt.0.01 then
-   dum23 = gsn_add_text(wks,plot2,"r = "+sprintf("%.2f",rc_r)+" (p < 0.01)",x1(1),y1(1),res2)
-else if pval(1).lt.0.05 then
-   dum23 = gsn_add_text(wks,plot2,"r = "+sprintf("%.2f",rc_r)+" (p < 0.05)",x1(1),y1(1),res2)
-else if pval(1).lt.0.1 then
-   dum23 = gsn_add_text(wks,plot2,"r = "+sprintf("%.2f",rc_r)+" (p < 0.10)",x1(1),y1(1),res2)
-else
-   dum23 = gsn_add_text(wks,plot2,"r = "+sprintf("%.2f",rc_r)+" (p = "+sprintf("%.2f",pval(1))+")",x1(1),y1(1),res2)
-end if
-end if
-end if
-
-;***********plot3************
-;*****OBS******
-res@xyLineColor         = "red"
-
-x := TEM_obs_SS_avg
-y := TEM_obs_DS_avg
-
-rc      := regline_stats(x,y)
-pval    := rc@pval                                   ; use markers
-pltarry := rc*x + rc@yintercept              ; use solid line
-
-if rc.lt.0 then
-   rc_r = -rc@r
- else
-   rc_r = rc@r
-end if
-
-print("TEM OBS P: "+pval(1))
-; print("TEM OBS yintercept:"+rc@yintercept)
-
-plot31  = gsn_csm_xy(wks,x,pltarry,res)        ; create plot
-overlay(plot3,plot31)
-
-;线性函数
-res2@txFontColor   = "red"
-
-x1 = (/-1.58, -1.51/)
-y1 = (/0.05, -0.07/)
-
-if rc@yintercept.lt.0 then
-   dum31 = gsn_add_text(wks,plot3,"y = "+sprintf("%.2f",rc)+"x - "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-else
-   dum31 = gsn_add_text(wks,plot3,"y = "+sprintf("%.2f",rc)+"x + "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-end if
-
-if pval(1).lt.0.01 then
-   dum31 = gsn_add_text(wks,plot3,"r = "+sprintf("%.2f",rc_r)+" (p < 0.01)",x1(1),y1(1),res2)
-else if pval(1).lt.0.05 then
-   dum31 = gsn_add_text(wks,plot3,"r = "+sprintf("%.2f",rc_r)+" (p < 0.05)",x1(1),y1(1),res2)
-else if pval(1).lt.0.1 then
-   dum31 = gsn_add_text(wks,plot3,"r = "+sprintf("%.2f",rc_r)+" (p < 0.10)",x1(1),y1(1),res2)
-else
-   dum31 = gsn_add_text(wks,plot3,"r = "+sprintf("%.2f",rc_r)+" (p = "+sprintf("%.2f",pval(1))+")",x1(1),y1(1),res2)
-end if
-end if
-end if
-
-;*****再分析******
-res@xyLineColor         = "blue"
-
-x := TEM_rea_SS
-y := TEM_rea_DS
-
-rc      := regline_stats(x,y)
-pval    := rc@pval                                   ; use markers
-pltarry := rc*x + rc@yintercept              ; use solid line
-
-if rc.lt.0 then
-   rc_r = -rc@r
- else
-   rc_r = rc@r
-end if
-
-print("TEM Rea P: "+pval(1))
-; print("TEM Rea yintercept:"+rc@yintercept)
-
-plot32  = gsn_csm_xy(wks,x,pltarry,res)        ; create plot
-overlay(plot3,plot32)
-
-;线性函数
-res2@txFontColor   = "blue"
-
-x1 = (/-1.58, -1.525/)
-y1 = (/0.05, -0.07/) -0.33
-
-if rc@yintercept.lt.0 then
-   dum32 = gsn_add_text(wks,plot3,"y = "+sprintf("%.2f",rc)+"x - "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-else
-   dum32 = gsn_add_text(wks,plot3,"y = "+sprintf("%.2f",rc)+"x + "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-end if
-
-if pval(1).lt.0.01 then
-   dum32 = gsn_add_text(wks,plot3,"r = "+sprintf("%.2f",rc_r)+" (p < 0.01)",x1(1),y1(1),res2)
-else if pval(1).lt.0.05 then
-   dum32 = gsn_add_text(wks,plot3,"r = "+sprintf("%.2f",rc_r)+" (p < 0.05)",x1(1),y1(1),res2)
-else if pval(1).lt.0.1 then
-   dum32 = gsn_add_text(wks,plot3,"r = "+sprintf("%.2f",rc_r)+" (p < 0.10)",x1(1),y1(1),res2)
-else
-   dum32 = gsn_add_text(wks,plot3,"r = "+sprintf("%.2f",rc_r)+" (p = "+sprintf("%.2f",pval(1))+")",x1(1),y1(1),res2)
-end if
-end if
-end if
-
-;*****CMIP6******
-res@xyLineColor         = "black"
-
-x := TEM_SS
-y := TEM_DS
-
-rc      := regline_stats(x,y)
-pval    := rc@pval                                   ; use markers
-pltarry := rc*x + rc@yintercept              ; use solid line
-
-if rc.lt.0 then
-   rc_r = -rc@r
- else
-   rc_r = rc@r
-end if
-
-print("TEM CMIP6 P: "+pval(1))
-; print("TEM CMIP6 yintercept:"+rc@yintercept)
-
-plot33  = gsn_csm_xy(wks,x,pltarry,res)        ; create plot
-overlay(plot3,plot33)
-
-;线性函数
-res2@txFontColor   = "black"
-
-x1 = (/-1.58, -1.525/)
-y1 = (/0.05, -0.07/) -0.66
-
-if rc@yintercept.lt.0 then
-   dum33 = gsn_add_text(wks,plot3,"y = "+sprintf("%.2f",rc)+"x - "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-else
-   dum33 = gsn_add_text(wks,plot3,"y = "+sprintf("%.2f",rc)+"x + "+sprintf("%.2f",abs(rc@yintercept)),x1(0),y1(0),res2)
-end if
-
-if pval(1).lt.0.01 then
-   dum33 = gsn_add_text(wks,plot3,"r = "+sprintf("%.2f",rc_r)+" (p < 0.01)",x1(1),y1(1),res2)
-else if pval(1).lt.0.05 then
-   dum33 = gsn_add_text(wks,plot3,"r = "+sprintf("%.2f",rc_r)+" (p < 0.05)",x1(1),y1(1),res2)
-else if pval(1).lt.0.1 then
-   dum33 = gsn_add_text(wks,plot3,"r = "+sprintf("%.2f",rc_r)+" (p < 0.10)",x1(1),y1(1),res2)
-else
-   dum33 = gsn_add_text(wks,plot3,"r = "+sprintf("%.2f",rc_r)+" (p = "+sprintf("%.2f",pval(1))+")",x1(1),y1(1),res2)
-end if
-end if
-end if
-
-;************ Create some labelbars for a legend*******
-labels1  = (/"OBS","Reanalysis","CMIP6"/)
-colors_line = (/"red","blue","black"/)
-
-xpos  := (/0.14,0.18,0.31,0.35,0.52,0.56/)+0.14
-ypos  := (/0.1,0.1,0.1,0.1,0.1,0.1/)+0.2
-
-res_text               = True
-res_text@txFontHeightF = 0.014
-res_text@txJust        = "CenterLeft"
-
-res_lines                   = True        ; polyline mods desired
-res_lines@gsLineThicknessF  = 2.2           ; line thicker
-res_lines@gsLineDashPattern = 0   ; dash pattern
-
-do i = 0,2
-  res_lines@gsLineColor       = colors_line(i)   ; line color
-
-  gsn_polyline_ndc(wks,xpos(i*2:i*2+1),ypos(i*2:i*2+1),res_lines)
-  gsn_text_ndc(wks,labels1(i),xpos(i*2)+0.045,ypos(i*2),res_text)
-end do
+; ;观测标注
+txres@txFontColor      = "red"
+amres@amParallelPosF   = -0.03
+amres@amOrthogonalPosF = 0.4
+txid2 = gsn_create_text(wks, "OBS", txres)
+annoid2 = gsn_add_annotation(plot, txid2, amres)
+
+txres@txFontColor      = "black"
+amres@amParallelPosF   = -0.46
+amres@amOrthogonalPosF = -0.385
+txid2 = gsn_create_text(wks, "OBS mean", txres)
+annoid2 = gsn_add_annotation(plot, txid2, amres)
+
+txres@txFontColor      = "gray50"
+amres@amParallelPosF   = -0.495
+amres@amOrthogonalPosF = -0.33
+txid2 = gsn_create_text(wks, "~F34~1~F~ OBS uncertainty", txres)
+annoid2 = gsn_add_annotation(plot, txid2, amres)
+
+txres@txFontColor      = "darkgreen"
+txres@txAngleF         = 90
+amres@amParallelPosF   = -0.445
+amres@amOrthogonalPosF = 0.102 ;-0.015
+txid2 = gsn_create_text(wks, "Constrained", txres)
+annoid2 = gsn_add_annotation(plot, txid2, amres)
 
 ;**********************************************************
- pres = True
-; pres@txString = "albedo("+ymStrt+"-"+ymLast+")"
-; pres@gsnPanelMainFontHeightF     = 0.015
- pres@gsnPanelXWhiteSpacePercent  = 5       ;留白
-; pres@gsnPanelYWhiteSpacePercent  = 5
-
-pres@gsnPanelFigureStrings        = (/"(a)","(b)","(c)"/)
-pres@gsnPanelFigureStringsJust    = "TopLeft"
-pres@gsnPanelFigureStringsPerimOn = False
-pres@gsnPanelFigureStringsFontHeightF = 0.012
-
-; XF = fspan(0.13,0.72,3)-0.06
-; pres@gsnPanelXF = (/XF(0),XF(1),XF(2)/)
-
-; plot4 = new(1,graphic)
-gsn_panel(wks,(/plot1,plot2,plot3/),(/1,3/),pres)
+pres = True
+gsn_panel(wks,plot,(/1,1/),pres)
 
 end
