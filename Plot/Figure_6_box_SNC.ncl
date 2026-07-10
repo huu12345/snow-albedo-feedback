@@ -596,10 +596,10 @@ res@tmYLPrecision    = 2    ;y轴精度
 res@tmYLMinorPerMajor= 4   ;相邻大刻度间的小刻度数量
 
 ;seasonal
-res@trYMinF    = -5.0
+res@trYMinF    = -6.0
 res@trYMaxF    = -0.
 res@tmYLMode   = "Manual"
-res@tmYLTickStartF   = -5.0
+res@tmYLTickStartF   = -6.0
 res@tmYLTickSpacingF = 1.0
 res@tmYLTickEndF     = -0.
 
@@ -622,10 +622,10 @@ plot5 = boxplot(wks,x,iarr_k1_DS,opti,res,llres)
 ;difference
 res@trYReverse = False
 
-res@trYMinF    = -3.0
+res@trYMinF    = -4.0
 res@trYMaxF    = 3.
 res@tmYLMode   = "Manual"
-res@tmYLTickStartF   = -3.0
+res@tmYLTickStartF   = -4.0
 res@tmYLTickSpacingF = 1.0
 res@tmYLTickEndF     = 3.
 
@@ -906,6 +906,8 @@ do i = 0,4
   dum_rea_4_diff(i) = gsn_add_polymarker(wks,plot12,x(1),land_rea_diff(i),mres2)
 end do
 
+; print(k1_rea_SS)
+; print(k1_rea_DS)
 ;**********再分析 avg***********
 mres2@gsMarkerIndex = mark_mean
 mres2@gsMarkerColor := color_mean
